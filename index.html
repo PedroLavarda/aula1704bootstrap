@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Bootstrap</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Menu Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-center w-100 text-white">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-disabled="true">Contato</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flex justify-content-end text-white">
+                <div class="dropdown">
+                    <i data-feather="user" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="d-flex mt-3 me-5">
+            <div class="w-75 text-center">
+                <p class="fs-4">Foram encontrados <strong>125</strong> resultados para <a href="">Esporte</a></p>
+            </div>
+            <div class="w-25 text-center">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="d-flex">
+            <div class="container h-50 w-75">
+                <div class="row">
+                    <div class="col-sm h-25">
+                        <div class="card mb-2 mt-4">
+                            <div class="row g-0">
+                                <div class="col-md-2">
+                                    <div class="mt-3 ms-3 w-50 border border-2 rounded-pill border-danger text-center text-danger">
+                                        <label class="">15%</label>
+                                    </div>
+                                    <img src="https://lojalanchinhos.com.br/wp-content/uploads/2021/09/Garrafa-T%C3%A9rmica-Preta-500ml.jpg.webp" class="img-fluid rounded-start mt-3" alt="img_garrafa">
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="card-body">
+                                        <h5 class="card-title fs-4 fw-bold">Garrafa Térmica</h5>
+                                        <p class="card-title fs-5 fw-bold">R$ 129,90</p>
+                                        <p class="card-text">Lorem ipsum dolor sit amet. Sed consequuntur quaerat eos sunt sunt eum harum dolore eum mollitia optio. Sed quos voluptates aut enim dolorem aut eveniet corrupti est omnis rerum in eligendi dolores sit commodi nobis? </p>
+
+                                        <div class="d-flex">
+                                            <div class="w-100">
+                                                <button type="button" class="btn btn-danger">Adicionar ao carrinho</button>
+                                            </div>
+                                            <div class="w-25 justify-content-end">
+                                                <button type="button" class="btn border border-2"><i data-feather="heart"></i></button>
+                                                <button type="button" class="btn border border-2"><i data-feather="rotate-cw"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm h-25">
+                        <div class="card mb-3 mt-4">
+                            <div class="row g-0">
+                                <div class="col-md-2">
+                                    <div class="mt-3 ms-3 w-50 border border-2 rounded-pill border-primary text-center text-primary">
+                                        <label class="">New</label>
+                                    </div>
+                                    <img src="data:image/jpeg;base64,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" class="img-fluid rounded-start" alt="img_garrafa">
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="card-body">
+                                        <h5 class="card-title fs-4 fw-bold">Bicicleta S20</h5>
+                                        <p class="card-title fs-5 fw-bold">R$ 990,90</p>
+                                        <p class="card-text">Lorem ipsum dolor sit amet. Sed consequuntur quaerat eos sunt sunt eum harum dolore eum mollitia optio. Sed quos voluptates aut enim dolorem aut eveniet corrupti est omnis rerum in eligendi dolores sit commodi nobis? </p>
+
+                                        <div class="d-flex">
+                                            <div class="w-100">
+                                                <button type="button" class="btn btn-danger">Adicionar ao carrinho</button>
+                                            </div>
+                                            <div class="w-25 justify-content-end">
+                                                <button type="button" class="btn border border-2"><i data-feather="heart"></i></button>
+                                                <button type="button" class="btn border border-2"><i data-feather="rotate-cw"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center container w-25">
+
+                <ul class="list-unstyled">
+                    <h5 class="mt-3 fs-3 mb-5">CATEGORIAS</h5>
+                    <li class="mb-2"><a class="text-decoration-none text-body" href="">Roupas esportivas</a></li>
+                    <li class="mb-2"><a class="text-decoration-none text-body" href="">Jaquetas</a></li>
+                    <li class="mb-2"><a class="text-decoration-none text-body" href="">Calçados</a></li>
+                    <li class="mb-2"><a class="text-decoration-none text-body" href="">Bolsas</a></li>
+                    <li class="mb-2"><a class="text-decoration-none text-body" href="">Presentes</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+<script>
+    feather.replace()
+</script>
+</html>
